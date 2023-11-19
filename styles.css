@@ -6,21 +6,40 @@
     background-color: white;
     z-index: 2;
 }
-.navbar1{
+.row1{
     display: flex;
     justify-content: space-between;
     margin: 15px;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
 }
-.navbar1::after {
+.row1::after {
     content: "";
     display: block;
     width: 100%;
     height: 1px;
     background-color: #ccc; 
     position: absolute;
-    top: 60px;
+    top: 70px;
+    left: 0;
+    z-index: 1001;
+}
+.row2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* margin: 1px; */
+    /* position: sticky; */
+    top: 0;
+}
+.row2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc; 
+    position: absolute;
+    top: 70px;
     left: 0;
     z-index: 1001;
 }
@@ -35,6 +54,16 @@
 .pgp{
     margin: 14px 15px 0 0;
     font-size: 20px;
+    border-bottom: 10px solid rgb(241, 241, 72);
+}
+.pgpHor{
+    margin: 14px 0 0 0;
+    font-size: 20px;
+    border-bottom: 10px solid rgb(241, 241, 72);
+}
+.pgp2{
+    margin: 14px 15px 0 0;
+    font-size: 25px;
     border-bottom: 10px solid rgb(241, 241, 72);
 }
 .inform{
@@ -63,29 +92,37 @@
     color: white;
     cursor: pointer;
 }
-.navbar2{
+header{
     display: flex;
     justify-content: center;
     align-items: center;
     position: sticky;
+    margin-bottom: 8px;
 }
-.navbar2::after {
+.row2::after {
     content: "";
-    display: block;
+    display:inline-block;
     width: 100%;
     height: 1px;
     background-color: #ccc;
     position: absolute;
-    top: 28px;
+    top: 106px;
     left: 0;
     z-index: 1001;
 }
-.nav2Info, .nav2InfoY{
+
+a{
+    text-decoration: none;
+    color: #100f0f;
+    background-color: white;
+}
+.nav2Info{
     margin: 0 8px 0 8px;
     font-size: 18px;
     cursor: pointer;
 }
-.nav2InfoY{
+.active{
+    transition:0.5s;
     border-bottom: 5px solid rgb(239, 239, 89);
     background-color: rgb(244, 244, 164);
 }
@@ -257,4 +294,113 @@ p{
 }
 .inLeftp{
     font-size: 15px;
+}
+#highlights{
+    margin-top:50px;
+    margin-left: 20px;
+}
+nav{
+    background-color: white;
+}
+.dots{
+    width: 16px;
+    height: auto;
+    margin-right: 4px;
+}
+.dotr{
+    width: 20px;
+    height: auto;
+    margin-right: 4px;
+    transform: rotate(-30deg);
+    cursor: pointer;
+}
+.dot{
+    font-size: 18px;
+}
+.buttonSection{
+    margin-top: 30px;
+    display: flex;
+}
+.high{
+    display: flex;
+}
+.apply{
+    width: 150px;
+    height: 50px;
+    margin-right: 20px;
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 4px 4px 4px rgba(247, 61, 61, 0.5);
+    }
+}
+.program{
+    width: 300px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 3px solid red;
+    border-radius: 4px;
+    background-color: white;
+    color: red;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 4px 4px 4px red;
+        transition: 0.5s;
+    }
+}
+.mastercamp{
+    background-color: yellow;
+    width: 140px;
+}
+.build{
+    margin-top: 30px;
+    margin-left: 110px;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow:  4px 4px 4px yellow;
+}
+.lastBox{
+    margin-top: 60px;
+    display: flex;
+    border: 1px solid black;
+    width: 95%;
+    border-radius: 8px;
+    box-shadow:  4px 4px 4px yellow;
+    margin-bottom: 160px;
+}
+.para{
+    font-size: 15px;
+}
+.paraY{
+    font-size: 15px;
+    background-color: yellow;
+}
+img{
+    width: 20px;
+    height: auto;
+}
+.duration, .hands, .cohort, .mode{
+    border-right:dotted ;
+}
+.suited{
+    padding:  0 20px 0 20px;
+}
+.duration{
+    padding:  0 40px 0 40px;
+}
+.mode{
+    padding:  0 20px 0 20px;
+}
+.hands{
+    padding:  0 70px 0 70px;
+}
+.cohort{
+    padding:  0 60px 0 60px;
 }

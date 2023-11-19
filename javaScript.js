@@ -24,3 +24,6 @@ arrow4.addEventListener('click', function() {
     arrow4.classList.toggle('active');
     extra4.classList.toggle('active');
 });
+
+let sections=document.querySelectorAll('section')
+let navLinks=document.querySelectorAll('header nav a')
